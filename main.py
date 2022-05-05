@@ -53,8 +53,6 @@ def convert_to_list(my_list):
     my_list[-1] = my_list[-1].replace('"]', '')
     return my_list
 
-# https://api.themoviedb.org/3/search/movie?api_key=a6270c31daee789ef6c54ceedce0a34c&query=taare+zameen+par
-
 
 def get_suggestions():
     return list(main_df['movie_title'].str.capitalize())
